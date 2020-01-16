@@ -14,3 +14,5 @@ RUN set -xe \
         && rm ./rebar3
 
 ENV PATH "$PATH:/root/.cache/rebar3/bin"
+
+ENTRYPOINT [ "rebar3", "--version" ]
